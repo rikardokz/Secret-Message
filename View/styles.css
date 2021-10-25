@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
 html {
     box-sizing: border-box;
     background-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('./images/background.jpg');
 }
 
 body {
@@ -12,6 +16,10 @@ body {
     height: 100%;
 }
 
+.title, .select {
+    color: #3a3939;
+}
+
 #list {
     display: flex;
     align-items: center;
@@ -20,7 +28,7 @@ body {
 }
 
 #list .list-item {
-    margin-right: 20px;
+    margin-right: 5%;
     padding: 100px;
     max-width: 33%;
     max-height: 33%;
@@ -29,9 +37,38 @@ body {
     list-style-type:none;
     font-size: 18px;
     font-weight: bold;
+    box-shadow: 8px 3px 19px 5px rgba(0,0,0,0.35);
 }
 
-.list-item .wisdom {
+
+#list .list-item:hover {
+    filter: grayscale(100%);
+    transform: translate3D(0,-1px,0) scale(1.03);
+    cursor: pointer;
+}
+
+.wisdom {
     background-image: url("https://images.unsplash.com/photo-1627474184945-ccd1db2a690d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1465&q=80");
     background-size: 100%;
+    color: #fff;
+}
+
+
+.gym {
+    background-image: url("https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80");
+    background-size: 100%;
+    color: #fff;
+    object-fit: fill;
+}
+
+.heart {
+    background-image: url("https://images.unsplash.com/photo-1516822003754-cca485356ecb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+    background-size: 100%;
+    color: #fff;
+}
+
+#message {
+    margin-top: 8%;
+    font-size: 3em;
+    color: #3a3939;
 }

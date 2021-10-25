@@ -1,6 +1,6 @@
 const messages = {
     
-    motivationMessages = [
+    motivationMessages: [
     "Be brave enough to start a conversation that matters.",
     "Focus on the good.",
     "Be your own kind of beautiful.",
@@ -15,7 +15,7 @@ const messages = {
     "You're too blessed to be stressed. Let it go and be happy."
 ],
 
-    hardMessages = [
+    hardMessages: [
     "Unless you puke, faint, or die. KEEP GOING.",
     "I don't broadcast every high and I don't hide every low. I'm triying to live. I'm not trying to convince the world I have a life.",
     "Don't be afraid of being different, be afraid of being the same as everyone else.",
@@ -35,7 +35,7 @@ const messages = {
     "If it doesn't challenge you, then it won't change you."
 ],
 
-    heartBreakMessage = [
+    heartBreakMessage: [
     "They say 'follow your heart', but if your heart is in a million pieces which piece do you follow?",
     "Not friend, not enemies, just some strangers with the same memories",
     "I have so much left to say to you, but you're not here...",
