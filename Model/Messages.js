@@ -45,6 +45,3 @@ const messages = {
     "I acted like it wasn't a big deal, when really, it was breaking my heart"
  ]
 }
-
-
-export default messages;
