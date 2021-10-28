@@ -70,11 +70,20 @@ body {
 
 #message {
     margin-top: 8%;
+    height: 10%;
+    max-height: 10%;
+    max-width: 90%;
     font-size: 3em;
     color: #3a3939;
     text-align: center;
 }
 
 footer {
+    position: fixed;
+    height: 50px;
     text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
 }
