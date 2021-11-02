@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb');
 const uri = "mongodb+srv://usertestes:12345@cluster0.yy9fl.mongodb.net/Cluster0?retryWrites=true&w=majority";
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-const dbName = "cluster0";
+const dbName = "messagesDB";
 /*
 client.connect(err => {
   const collection = client.db("test").collection("devices");
@@ -22,13 +22,10 @@ async function run() {
         console.log("Connected correctly to server");
         const db = client.db(dbName);
 
-        // Use the collection "people"
-        const col = db.collection("messagesDB");
-        const find = await col.find({
-            heartBreakMessage
-        });
+        const col = db.collection("messages");
+        const find = await col.findOne({});
         
-        find.forEach(val => console.log(val));
+        console.log(find.hardMessages[0]);
 
     } catch (err) {
         console.log(err.stack);
