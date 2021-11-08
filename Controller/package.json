@@ -1,0 +1,11 @@
+{
+  "name": "controller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "connect.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
